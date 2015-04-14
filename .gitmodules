@@ -1,0 +1,6 @@
+[submodule "alfresco-login-reset-repo"]
+	path = alfresco-login-reset-repo
+	url = git@github.com:teqnology/alfresco-login-reset-repo.git
+[submodule "alfresco-login-reset-share"]
+	path = alfresco-login-reset-share
+	url = git@github.com:teqnology/alfresco-login-reset-share.git
