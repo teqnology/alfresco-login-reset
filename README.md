@@ -30,8 +30,8 @@ The Share login page will also call the Alfresco `/api/server` web script and al
 # Quickstart
 
 - Locate the AMP files inside the path:
-	- `alfresco-login-reset-repo/target/alfresco-login-reset-repo.amp`
-	- `alfresco-login-reset-share/target/alfresco-login-reset-share.amp`
+	- `alfresco-login-reset-repo/target/alfresco-login-reset-repo.amp` you can download it [here](https://github.com/teqnology/alfresco-login-reset-repo/blob/master/target/alfresco-login-reset-repo.amp)
+	- `alfresco-login-reset-share/target/alfresco-login-reset-share.amp` you can download it [here](https://github.com/teqnology/alfresco-login-reset-share/blob/master/target/alfresco-login-reset-share.amp)
 - Stop Alfresco
 - Copy the `-repo.amp` inside your alfresco `amps` folder
 - Copy the `-share.amp` inside your alfresco `amps_share` folder
