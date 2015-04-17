@@ -33,8 +33,8 @@ The Share login page will also call the Alfresco `/api/server` web script and al
 	- `alfresco-login-reset-repo/target/alfresco-login-reset-repo.amp` you can download it [here](https://github.com/teqnology/alfresco-login-reset-repo/blob/master/target/alfresco-login-reset-repo.amp)
 	- `alfresco-login-reset-share/target/alfresco-login-reset-share.amp` you can download it [here](https://github.com/teqnology/alfresco-login-reset-share/blob/master/target/alfresco-login-reset-share.amp)
 - Stop Alfresco
-- Copy the `-repo.amp` inside your alfresco `amps` folder
-- Copy the `-share.amp` inside your alfresco `amps_share` folder
+- Copy the [alfresco-login-reset-repo.amp](https://github.com/teqnology/alfresco-login-reset-repo) inside your alfresco `amps` folder
+- Copy the [alfresco-login-reset-share.amp](https://github.com/teqnology/alfresco-login-reset-share) inside your alfresco `amps_share` folder
 - Run `bin/apply_amps.sh` in order to install the extensions
 - Start Alfresco
 - Open Alfresco Share URL (eg. `http://localhost:8080/share`) to check if the new login page and the reset password are in place
