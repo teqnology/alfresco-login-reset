@@ -1,16 +1,19 @@
-Alfresco Login Reset
+Androgogic - Alfresco Login Reset
 ---
 
-Alfresco Share new login page and an Activiti reset password workflow feature 
+This project includes both -repo and -share AMPs that override the default login page and adds the "missing" feature of the "reset password".
+Also, the password is never shown in plain text. The entire process replicates in a similar way how Alfresco Cloud reset password works, through use of Activiti workflows, and using a unique instance key and ID to match with the original user request.
+
+###This extension is being actively developed in [@Androgogic](https://twitter.com/androgogue) by their Alfresco Team. Credits are mentioned at the end of this file.
 
 # Features
 
 - Brand new Alfresco Share login page based on [Material Design by Google](http://www.google.com/design/spec/material-design/introduction.html).
 - Front end framework based on a slightly modified version of [materialize.css](http://materializecss.com/). The GitHub project can be found [here](https://github.com/Dogfalo/materialize).
 - A new Alfresco Share "Forgot Password" page that allows users to input their emails or username registered against the repository. The extension will then send an email with the instructions (even if multiple users with the same email are found).
-- An Activiti workflow that is triggered for each valid request and a unique key ID.
-- A new Alfresco Share "Reset Password" page that will match the `activiti$id` and the unique key ID with the user, and will inject the list of available users (if multiple with the same email are found) in the reset password form.
-- A list of repository tier back end web scripts that manage and handle all requests, send emails and return status messages for Share ftl pages to expose.
+- An Activiti workflow started for each valid request with a unique key ID.
+- A new Alfresco Share "Reset Password" page that will match the `activiti$id` and the unique key ID with the user, and will prompt the list of available users (if multiple with the same email are found) in the reset password form. The user will then be able to chose from one of his accounts to reset the password for.
+- A list of repository tier back end web scripts that manage and handle all requests, send emails and return status messages for Share ftl pages to be exposed.
 - A scheduled action that ends all workflows that are part of unused password reset requests or older than 24 hours.
 
 This process will allow a more solid and secure approach to reset password requests.
